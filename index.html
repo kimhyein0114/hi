@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김혜인 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+  <section id="main-opening">
+    <!-- 로고 글자 (인라인 스타일 제거) -->
+    <img src="images/혜.png" class="logo move1" alt="혜">
+    <img src="images/인.png" class="logo move2" alt="인">
+    <img src="images/이.png" class="logo move3" alt="이">
+    <img src="images/는.png" class="logo move4" alt="는">
+    <img src="images/못.png" class="logo move5" alt="못">
+    <img src="images/말.png" class="logo move6" alt="말">
+    <img src="images/려.png" class="logo move7" alt="려">
+  
+    <!-- 장난감 오브젝트 -->
+    <img src="images/큰사탕.png" class="toy bigcandy" alt="큰사탕">
+    <img src="images/종이.png" class="toy paper" alt="종이">
+    <img src="images/공룡.png" class="toy dino" alt="공룡">
+    <img src="images/크레파스.png" class="toy crayon" alt="크레파스">
+    <img src="images/기차.png" class="toy train" alt="기차">
+    <img src="images/망원경.png" class="toy telescope" alt="망원경">
+    <img src="images/빨간블럭.png" class="toy block1" alt="빨간블럭">
+    <img src="images/초록블럭.png" class="toy block2" alt="초록블럭">
+    <img src="images/양동이.png" class="toy bucket" alt="양동이">
+    <img src="images/공.png" class="toy ball" alt="공">
+    <img src="images/병아리.png" class="toy chick" alt="병아리">
+    <img src="images/로봇.png" class="toy robot" alt="로봇">
+    <img src="images/사탕 막대기.png" class="toy candystick" alt="사탕 막대기">
+    <img src="images/작은사탕.png" class="toy minicandy" alt="작은사탕">
+    <img src="images/트럼펫.png" class="toy trumpet" alt="트럼펫">
+    <img src="images/드럼채.png" class="toy drumstick" alt="드럼채">
+    <img src="images/드럼.png" class="toy drum" alt="드럼">
+  </section>
+
+    <!-- 네비게이션 바 -->
+    <div class="toggle-btn"></div>
+    <nav>
+        <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#web-portfolio">웹 포트폴리오</a></li>
+            <li><a href="#gallery">영상 포트폴리오</a></li>
+            <li><a href="#qa-contact">연락하기</a></li>
+        </ul>
+    </nav>
+
+    <!-- 소개 섹션 -->
+    <section id="about">
+      <div class="about-container">
+        <!-- 이미지 박스 (좌측) -->
+        <div class="about-img-box">
+          <img src="images/profile.png" alt="프로필 이미지" width="300">
+          <div class="overlay">
+            <div class="overlay-text">안녕하세요!<br>김혜인입니다 😊</div>
+          </div>
+        </div>
+        
+        <!-- 탭 패널 (우측) -->
+        <div class="about-panel">
+          <!-- 고정 헤더: 로고 역할 -->
+          <div class="about-panel-header">
+            <h2>ABOUT ME</h2>
+          </div>
+          <!-- 탭 버튼 (패널 상단에 고정) -->
+          <div class="tab-buttons">
+            <label class="tab-btn active" data-target="#content1">소개</label>
+            <label class="tab-btn" data-target="#content2">기술</label>
+            <label class="tab-btn" data-target="#content3">커리어</label>
+            <label class="tab-btn" data-target="#content4">스킬</label>
+          </div>
+          <!-- 탭 콘텐츠 영역: 최소 높이를 고정하여 레이아웃 흔들림 방지 -->
+          <div class="tab-content-wrapper">
+            <div class="tab-content active" id="content1">
+              <p>
+                안녕하세요, 저는 김혜인입니다.<br>
+                스토리를 시각적으로 표현하는 데 관심이 많으며,<br>
+                영상 편집, 모션 그래픽, UX/UI 디자인 등<br>
+                다양한 멀티미디어 콘텐츠 제작 경험을 가지고 있습니다.<br><br>
+                Adobe Premiere Pro, After Effects, Figma 등을 활용하여<br>
+                감각적인 영상과 직관적인 인터페이스를 설계하며,<br>
+                사용자 경험을 고려한 인터랙티브 콘텐츠 제작에도<br>
+                흥미가 있습니다.<br><br>
+                앞으로도 창의적인 아이디어와 기술을 접목하여<br>
+                더욱 완성도 높은 미디어 콘텐츠를 제작하는<br>
+                전문가로 성장하고 싶습니다.
+              </p>
+            </div>
+        
+            <div class="tab-content" id="content2">
+              <p>
+                일러스트<br>
+                포토샵<br>
+                웹디자인 개발기능사<br>
+                컴퓨터그래픽기능사<br>
+                멀티미디어 콘텐츠 제작
+              </p>
+            </div>
+        
+            <div class="tab-content" id="content3">
+              <p>
+                2021년 대구예담학교 수료<br>
+                2022년 사동고등학교 졸업<br>
+                2025년 정화예술대학교 실용음악과 중퇴<br>
+                2025년 그린컴퓨터아카데미 수료
+              </p>
+            </div>
+        
+            <div class="tab-content" id="content4">
+                  <p>
+                    일러스트 <br>
+                    포토샵 <br>
+                    애프터이펙트 <br>
+                    프리미어 프로 <br>
+                    HTML <br>
+                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 웹 포트폴리오 섹션 -->
+    <div id="web-portfolio">
+      <div class="portfolio-intro sticky-intro">
+        <h2><img src="images/icon.png" alt="아이콘" style="height: 50px; vertical-align: middle;"> WEB PORTFOLIO</h2>
+        <h4><strong>클론코딩 및 웹디자인 소개</strong></h4>
+        <p>
+          실제 서비스와 유사한 웹사이트를 제작하며 실제 경험을 쌓는 클론코딩 프로젝트를 진행했습니다.<br>
+          최신 웹 트렌드와 UI/UX 디자인을 반영하여, 사용자 친화적인 인터페이스를 구현하는 데 집중했습니다.<br>
+          또한, 반응형 디자인과 최적화된 코드 구조를 적용하여 다양한 디바이스에서도 원활한 사용이 가능하도록 개발하였습니다.
+        </p>
+      </div>
+    
+      <div class="card-container">
+        <div class="card">
+          <img src="images//캡처.PNG" alt="Project 1">
+          <h3>프로젝트 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quos illo nihil cupiditate eos obcaecati praesentium asperiores</p>
+        </div>
+        <div class="card">
+          <img src="images//캡처.PNG" alt="Project 2">
+          <h3>프로젝트 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quos illo nihil cupiditate eos obcaecati praesentium asperiores</p>
+        </div>
+        <div class="card">
+          <img src="images//캡처.PNG" alt="Project 3">
+          <h3>프로젝트 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quos illo nihil cupiditate eos obcaecati praesentium asperiores</p>
+        </div>
+        <div class="card-fake-trigger"></div>
+      </div>
+    </div>
+    
+    
+    <!-- 영상 포트폴리오 -->
+    <section class="gallery" id="gallery">
+      <div class="gallery-header">
+        <h2><img src="images/icon.png" alt="아이콘" style="height: 50px; vertical-align: middle;"> Video PORTFOLIO</h2>
+        <h4><strong>영상 포트폴리오 소개</strong></h4>
+        <p>
+          브랜드 광고, 유튜브 콘텐츠, SNS 영상 등 다양한 프로젝트를 진행하며, 
+          트렌디한 디자인과 세련된 편집으로 시각적 완성도를 높였습니다. <br>
+          After Effects와 Premiere Pro를 활용해 
+          다이내믹한 모션그래픽과 몰입감 있는 영상 연출을 구현하며,
+          색보정과 사운드 디자인까지 디테일한 요소를 신경 씁니다. <br>
+          기획 의도에 맞춰 효과적인 메시지를 전달하는
+          맞춤형 콘텐츠 제작을 목표로 합니다. 
+        </p>
+      </div>
+      <ul class="gallery-collection">
+          <li>
+              <div class="inner">
+                <figure>
+                    <video src="video/짱구 인트로.mp4" loop muted></video>
+                </figure>
+                  <div class="txt">
+                      <h3>인트로 영상 작업물</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="inner">
+                <figure>
+                  <video src="video/짱구 인트로.mp4" loop muted></video>
+                </figure>
+                <div class="txt">
+                    <h3>모션그래픽 프로젝트</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          </li>
+          <li>
+              <div class="inner">
+                <figure>
+                  <video src="video/짱구 인트로.mp4" loop muted></video>
+                </figure>
+                <div class="txt">
+                    <h3>UI/UX 시연 영상</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          </li>
+          <li>
+              <div class="inner">
+                <figure>
+                  <video src="video/짱구 인트로.mp4" loop muted></video>
+                </figure>
+                <div class="txt">
+                    <h3>광고 영상 제작</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+          </li>
+      </ul>
+      <div class="popup">
+          <div class="txt">
+              <h2>제목</h2>
+              <p>설명</p>
+              <button>CLOSE</button>
+          </div>
+          <figure>
+              <video src="" loop muted></video>
+          </figure>
+      </div>
+  </section>
+
+
+  <!-- Q&A 영역 -->
+  <section id="qa-contact" class="section">
+    <div class="qa-box">
+      <h2>궁금한 점이 있으신가요?</h2>
+      <div class="qa-list">
+        <button class="accordion">멀티미디어를 배우게 된 계기는?</button>
+        <div class="panel">
+          <p>저는 시각적인 콘텐츠에 흥미를 느껴 자연스럽게 멀티미디어를 배우게 되었습니다.</p>
+        </div>
+        <button class="accordion">포트폴리오 제작 과정은?</button>
+        <div class="panel">
+          <p>기획 → 디자인 → 개발 과정을 반복하며 사용자 중심으로 구성했습니다.</p>
+        </div>
+        <button class="accordion">가장 자랑스러운 프로젝트는?</button>
+        <div class="panel">
+          <p>반응형 웹사이트 제작 프로젝트로, 모든 디바이스에서 최적화된 디자인을 구현한 경험입니다.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contact 영역 -->
+    <div class="contact-box">
+      <h2>연락하기</h2>
+      <p>여러분들의 연락을 기다리겠습니다!</p>
+      <form>
+        <input type="text" placeholder="이름" required />
+        <input type="email" placeholder="이메일" required />
+        <textarea class="msg" placeholder="메시지" required></textarea>
+        <button type="submit">전송</button>
+      </form>
+      <div class="contact-info">
+        <h4>📞 Phone: 010-5601-7783</h4>
+        <h4>📧 Email: khi7783@naver.com</h4>
+        <h4>📍 Address: 경상북도 경산시 백천동</h4>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

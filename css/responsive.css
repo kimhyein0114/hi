@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@media (max-width: 1800px) {
+    #main-opening img {
+        transform: scale(0.97) !important;
+      }
+  }
+
+@media (max-width: 1700px) {
+    #main-opening img {
+        transform: scale(0.9) !important;
+      }
+}
+
+@media (max-width: 1600px) {
+    #main-opening img {
+        transform: scale(0.85) !important;
+      }
+}
+
+@media (max-width: 1440px) {
+    #main-opening img {
+        transform: scale(0.78) !important;
+      }
+
+.logo.move1 { top: 35vh; left: 12vw; }
+.logo.move2 { top: 44vh; left: 29vw; }
+.logo.move3 { top: 46vh; left: 37vw; }
+.logo.move4 { top: 37vh; right: 43.5vw; }
+.logo.move5 { top: 31vh; right: 33vw; }
+.logo.move6 { top: 38vh; right: 23vw; }
+.logo.move7 { top: 45vh; right: 11vw; }
+
+/* 장난감 오브젝트 위치 */
+.toy.bigcandy    { top: -18vh; left: 20vw; }
+.toy.paper       { top: 3vh;   left: -35vw; }
+.toy.dino        { top: -18vh; left: -15vw; }
+.toy.crayon      { top: 33vh;  left: -3vw; }
+.toy.telescope   { top: 50vh;  left: -15vw; }
+.toy.train       { top: 77.5vh; left: 5vw; }
+.toy.block1      { bottom: -10vh; left: 18vw; }
+.toy.block2      { bottom: -0.5vh; left: 35vw; }
+.toy.bucket      { bottom: -10vh; right: 24vw; }
+.toy.ball        { bottom: -8vh;  right: 9vw; }
+.toy.chick       { bottom: -8vh;  right: 18vw; }
+.toy.robot       { top: 60vh;   right: -21vw; }
+.toy.candystick  { top: 50vh;   right: -14vw; }
+.toy.minicandy   { top: 38vh;   right: -3vw; }
+.toy.trumpet     { top: 10vh;   right: -8vw; }
+.toy.drumstick   { top: -8vh;  right: 13vw; }
+.toy.drum        { top: -16vh;  right: 23vw; }
+}
+
+@media (max-width: 1220px) {
+    #main-opening img {
+        transform: scale(0.73) !important;
+      }
+
+      .toggle-btn{
+        top: 29vh;
+        right: 5vh;
+      }
+
+      nav {
+        width: 15%;
+        top: 6vh;
+        right: -10vw;
+      }
+
+      .portfolio-intro{
+        padding: 50px;
+        width: 950px;
+      }
+
+      .card{
+        width: 350px;
+        height: 350px;
+        margin: 0;
+        padding: 15px;
+      }
+
+      .card:nth-child(1) {
+      }
+      .card:nth-child(2) {
+      }
+      .card:nth-child(3) {
+      }
+    }
+
+@media (max-width: 1024px) {
+    #main-opening img {
+        transform: scale(0.65) !important;
+      }
+    }
